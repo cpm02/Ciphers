@@ -26,7 +26,7 @@ unsigned long func(unsigned long r0,unsigned long key)
     {
         s[i]=(i+1)%16;
     }
-    unsigned long y0=(s[part[7]]<<28)|(s[part[6]]<<24)|(s[part[5]]<<20)|(s[part[4]]<<16)|(s[part[3]]<<12)|(s[part[2]]<<8)|(s[part[1]]<<4)|(s[part[0]]);
+    unsigned long y0=(s[b1]<<28)|(s[b2]<<24)|(s[b3]<<20)|(s[b4]<<16)|(s[b5]<<12)|(s[b6]<<8)|(s[b7]<<4)|(s[b8]);
     return y0;
 }
 unsigned long long en(unsigned long long pt,unsigned long key)
